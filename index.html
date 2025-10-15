@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Credit Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card-container">
+    <div class="credit-card" id="credit-card">
+      <div class="front">
+        <div class="chip"></div>
+        <div class="card-number" id="card-number">#### #### #### ####</div>
+        <div class="card-holder">
+          <label>Card Holder</label>
+          <div id="card-holder-name">Your Name</div>
+        </div>
+        <div class="card-expiry">
+          <label>Expires</label>
+          <div id="card-expiry-date">MM/YY</div>
+        </div>
+      </div>
+
+      <div class="back">
+        <div class="magnetic-strip"></div>
+        <div class="signature-box">
+          <label>CVV</label>
+          <div id="card-cvv">###</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-form">
+    <input type="text" id="input-number" placeholder="Card Number" maxlength="19" />
+    <input type="text" id="input-name" placeholder="Card Holder Name" />
+    <input type="text" id="input-expiry" placeholder="MM/YY" maxlength="5" />
+    <input type="text" id="input-cvv" placeholder="CVV" maxlength="3" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
